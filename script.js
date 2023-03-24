@@ -1,6 +1,7 @@
 // Tangkap beberapa element HTML
 let modal = document.getElementById('modal');
 let floating_button = document.getElementById('floating_button');
+let modal_bg = document.getElementById('modal_bg');
 let addlist_form = document.getElementById('addlist_form');
 let root = document.getElementById('root');
 let subtitle = document.getElementById('subtitle');
@@ -92,6 +93,5 @@ function renderToHtml() {
 // function delete item pada array datalistbelanja
 function handleDelete(index) {
   data_list_belanja.splice(index, 1);
-
   renderToHtml();
 }
